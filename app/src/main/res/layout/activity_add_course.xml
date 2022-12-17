@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCourseActivity">
+
+    <EditText
+        android:id="@+id/course_title_edit_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Course Title : "
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/course_content_edit_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        android:hint="Enter Course Content : "
+        android:lines="5"
+        app:layout_constraintTop_toBottomOf="@id/course_title_edit_Text" />
+
+    <Button
+        android:id="@+id/add_course_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add Course"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/course_content_edit_Text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
