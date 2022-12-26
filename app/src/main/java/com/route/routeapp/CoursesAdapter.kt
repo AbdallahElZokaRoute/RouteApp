@@ -1,6 +1,5 @@
 package com.route.routeapp
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.OnClickListener
@@ -31,7 +30,7 @@ class CoursesAdapter(
         return CoursesViewHolder(view)
     }
 
-    fun setData(courses: List<CourseDataItem>) {
+    fun updateData(courses: List<CourseDataItem>) {
         this.coursesList = courses
         notifyDataSetChanged() //Refresh Data
 
